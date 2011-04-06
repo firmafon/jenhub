@@ -5,3 +5,5 @@
 :username: jenkins
 # password of that user
 :password: pass
+# secret token
+:token: seekrit

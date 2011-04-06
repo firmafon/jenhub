@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'yaml'
 
-get '/job/:job/:token' do
+post '/job/:job/:token' do
   config = YAML.load_file('./config.yml')
 
   if params[:token] == config[:token]
