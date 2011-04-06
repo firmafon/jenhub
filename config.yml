@@ -1,0 +1,7 @@
+--- 
+# no slash, http in front of it
+:jenkins: http://46.137.124.27:8080
+# username of user that has access to trigger builds
+:username: jenkins
+# password of that user
+:password: pass
