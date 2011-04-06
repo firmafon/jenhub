@@ -15,7 +15,7 @@ Have a look at the configuration file `config.yml`, where you'll specify:
 
 Run genhub with `thin` while being in the directory:
 
-`thin start`
+    $ thin start
 
 Github's post-receive URL should then point against:
 
