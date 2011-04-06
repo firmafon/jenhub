@@ -40,4 +40,4 @@ You can easily deploy jenhub on Heroku:
 
 # Copyright
 
-Copyright (c) 2010 Firmafon ApS. See LICENSE for details.
+Copyright (c) 2011 Firmafon ApS. This project is licensed under the MIT license, see LICENSE for details.
