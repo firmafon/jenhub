@@ -24,5 +24,5 @@ Github's post-receive URL should then point against:
 
 Which'll basically just make Jenhub issue:
 
-    curl -u "<username>:<password>" <jenkins url>/job/<job>
+    curl -u "<username>:<password>" <jenkins url>/job/<job>/build
     curl -u "sirupsen:seekrit" mybuilder.com/job/jenhub/build # example
