@@ -29,3 +29,11 @@ Which'll make Jenhub issue:
 
     curl -u "<username>:<password>" <jenkins url>/job/<job>/build
     curl -u "sirupsen:seekrit" mybuilder.com/job/jenhub/build # example
+
+You can easily deploy jenhub on Heroku:
+
+    $ # change config.yml
+    $ git commit -am '...'
+    $ heroku create <your company>-jenhub
+    $ git push heroku master
+    $ # done! go put up the hook on github
