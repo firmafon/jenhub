@@ -37,3 +37,7 @@ You can easily deploy jenhub on Heroku:
     $ heroku create <your company>-jenhub
     $ git push heroku master
     $ # done! go put up the hook on github
+
+# Copyright
+
+Copyright (c) 2010 Firmafon ApS. See LICENSE for details.
