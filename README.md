@@ -14,6 +14,7 @@ Have a look at the configuration file `config.yml`, where you'll specify:
 
 * Jenkins URL
 * Username and password of Jenkins user available to trigger builds
+* Secret token for starting builds
 
 Run jenhub with `thin` while being in the jenhub directory:
 
@@ -21,7 +22,7 @@ Run jenhub with `thin` while being in the jenhub directory:
 
 Github's post-receive URL should then point against (specify this in a Github repository's admin interface -> Service Hooks -> Post-Receive URLs):
 
-    <jenkins url>/job/<jenkins job name>
+    <jenkins url>/job/<jenkins job name>/<specified token>
     mybuilder.com/job/jenhub # example
 
 Which'll make Jenhub issue:
