@@ -4,25 +4,27 @@ Private Jenkin projects will not let Github hooks trigger a build, since Github 
 
 # Installation
 
-Jenhub requires Ruby 1.9.2.
+Jenhub requires `ruby` (only tested on 1.9, but should work on 1.8 as well) and `curl`.
 
-Git clone this. `cd` in and run `bundle` (`gem install bundler` if you don't already have it), this'll install all the gems needed to make genhub run.
+`git clone` this. `cd foghub` and run `bundle` (`gem install bundler` if you don't already have it), this'll install all the gems needed to make genhub run.
+
+    git clone https://github.com/Sirupsen/jenhub.git && cd foghub && gem install bundler && bundle
 
 Have a look at the configuration file `config.yml`, where you'll specify:
 
 * Jenkins URL
-* Username and password of Jenkins user available to read and trigger builds
+* Username and password of Jenkins user available to trigger builds
 
-Run genhub with `thin` while being in the directory:
+Run jenhub with `thin` while being in the jenhub directory:
 
     $ thin start
 
-Github's post-receive URL should then point against:
+Github's post-receive URL should then point against (specify this in a Github repository's admin interface -> Service Hooks -> Post-Receive URLs):
 
     <jenkins url>/job/<jenkins job name>
     mybuilder.com/job/jenhub # example
 
-Which'll basically just make Jenhub issue:
+Which'll make Jenhub issue:
 
     curl -u "<username>:<password>" <jenkins url>/job/<job>/build
     curl -u "sirupsen:seekrit" mybuilder.com/job/jenhub/build # example
