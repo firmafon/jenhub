@@ -8,7 +8,7 @@ Jenhub requires `ruby` (only tested on 1.9, but should work on 1.8 as well) and 
 
 `git clone` this. `cd foghub` and run `bundle` (`gem install bundler` if you don't already have it), this'll install all the gems needed to make genhub run.
 
-    $ git clone https://github.com/Sirupsen/jenhub.git && cd foghub && gem install bundler && bundle
+    $ git clone https://github.com/firmafon/jenhub.git && cd foghub && gem install bundler && bundle
 
 Have a look at the configuration file `config.yml`, where you'll specify:
 
